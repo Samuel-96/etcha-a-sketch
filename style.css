@@ -1,0 +1,98 @@
+html{
+    font-family: "Open Sans", Helvetica, arial;
+}
+
+.cabecera{
+    
+    text-align: center;
+    color: rgba(237, 232, 232, 0.918);
+}
+
+body{
+    padding: 1em;
+    background-color: #181818;
+}
+
+button{
+    border: solid;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1.2em;
+    font-size: 15px;
+    margin: 11px;
+    background-color: #181818;
+    border-color: rgb(16, 162, 162);
+    color: aliceblue;
+    width: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.3s;
+    
+}
+
+button:hover{
+    background-color: rgb(16, 162, 162);
+    color: black;
+}
+
+.botones{
+    margin-left: 4em;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2b2b2b;
+}
+
+.container-slider{
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: center;
+}
+
+.container-opciones{
+    display: flex;
+    margin-bottom: 2em;
+
+}
+
+.container-boceto{
+    margin-left: 4em;
+    width: 60%;
+}
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+.pie {
+    background-color: #2b2b2b;
+    width: 30%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
+    padding: 1.1em;
+    color: white;
+}
+
+.pie>p{
+    margin-left: 2em;
+}
+
+.cbColorAleatorio + p{
+    color: white;
+}
+
+.cbColorAleatorio{
+    margin-top: 1;
+}

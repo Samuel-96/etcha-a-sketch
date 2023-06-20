@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+    <title>Crea un boceto</title>
+</head>
+<body>
+    <div class="cabecera">
+        <h1>BOCETO </h1>
+    </div>
+
+    <div class="container-opciones">
+        <div class="botones">
+            <input type="checkbox" class="cbColorAleatorio" id="btnRandomColor"><p>¡Activar colores aleatorios!</p></button>
+            <button class="btn" id="btnColor">Cambiar color de acento</button>
+            <button class="btn" id="btnEliminarColores">Eliminar colores</button>
+            <button class="btn" id="btnLineasGrid">Desactivar lineas del grid</button>
+            <div class="container-slider">
+                <input type="range" value="6" min="2" max="24" id="slider" onchange="rangeSlider(this.value)">
+                <div class="valores">
+                    <p class="valorMinimo" style="float: left;"></p>
+                    <p class="valorMaximo" style="float: right;"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-boceto">
+                
+        </div>
+    </div>
+
+    <input type="color" id="colorPicker" tabindex=-1 class="hidden">
+
+    <div class="contenedor-footer">
+        <footer class="pie">
+            <a href="https://github.com/Samuel-96"><img src="./resources/logo.png" style="width: 75px;" style="height: 75px;"></a>
+            <p>Autor: Samuel Amat Enguidanos</p>
+        </footer>
+    </div>
+</body>
+</html>
