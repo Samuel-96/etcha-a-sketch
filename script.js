@@ -104,8 +104,14 @@ function cargarGrid(numCuadriculas){
         cuadricula.textContent = "";
         cuadricula.style.width = "auto";
         cuadricula.style.height = "auto";
-        cuadricula.style.border = "solid";
-        cuadricula.style.borderWidth = "0.1px";
+        if(!lineasGridActivadas){
+          cuadricula.style.border = "none";
+        }
+        else{
+          cuadricula.style.border = "solid";
+          cuadricula.style.borderWidth = "0.1px";
+        }
+        
         cuadricula.style.backgroundColor = "white";
         cuadricula.addEventListener("mouseover",hover);
         
